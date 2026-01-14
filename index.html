@@ -8,7 +8,7 @@
     <meta name="description" content="Qile Jiang - Applied Math and AI PhD Researcher specializing in Scientific Computing and Machine Learning">
     <meta name="keywords" content="Qile Jiang, Applied Mathematics, AI, Machine Learning, Scientific Computing, LLM agents, Foundation Models, Brown University">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script>
@@ -35,7 +35,6 @@
             <div class="flex justify-between items-center">
                 <a href="#" class="nav-logo">QJ</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#whatsnew" class="nav-link text-darknavy hover:text-navy transition-colors">What's New</a>
                     <a href="#blogs" class="nav-link text-darknavy hover:text-navy transition-colors">Blogs</a>
                     <a href="#publications" class="nav-link text-darknavy hover:text-navy transition-colors">Publications</a>
                     <a href="#experience" class="nav-link text-darknavy hover:text-navy transition-colors">Experience</a>
@@ -47,7 +46,6 @@
             </div>
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-4">
-                <a href="#whatsnew" class="block text-darknavy hover:text-navy">What's New</a>
                 <a href="#blogs" class="block text-darknavy hover:text-navy">Blogs</a>
                 <a href="#publications" class="block text-darknavy hover:text-navy">Publications</a>
                 <a href="#experience" class="block text-darknavy hover:text-navy">Experience</a>
@@ -92,33 +90,25 @@
         </div>
     </section>
 
-    <!-- What's New -->
-    <section id="whatsnew" class="py-20 bg-warmgray/30 section-divider" data-aos="fade-up">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">What's New</h2>
-            <div class="max-w-4xl mx-auto">
-                <a href="https://contextual.ai/blog/context-engineering-for-your-mcp-client" target="_blank" class="card rounded-xl p-8 block">
-                     <div class="flex items-start justify-between">
-                        <div>
-                            <span class="text-accent text-sm font-semibold uppercase tracking-wide">Blog Post</span>
-                            <h3 class="text-2xl font-semibold mt-2 mb-4 text-navy">Context Engineering for Your MCP Client</h3>
-                            <p class="text-darknavy/70 leading-relaxed">
-                                Learn how to optimize context retrieval for Model Context Protocol (MCP) clients. This guide covers hierarchical document chunking,
-                                semantic search strategies, and best practices for building production-ready RAG pipelines.
-                            </p>
-                        </div>
-                        <i class="fas fa-arrow-right text-accent ml-4 mt-8"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- Blogs -->
     <section id="blogs" class="py-20 bg-cream section-divider" data-aos="fade-up">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Blogs</h2>
             <div class="max-w-4xl mx-auto">
+                <a href="https://contextual.ai/blog/context-engineering-for-your-mcp-client" target="_blank" class="card rounded-xl p-8 block mb-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-server text-2xl text-darknavy mr-3"></i>
+                        <span class="text-softblue text-sm font-semibold uppercase tracking-wide">Contextual AI</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-navy">Context Engineering for Your MCP Client</h3>
+                    <p class="text-darknavy/70 leading-relaxed">
+                        Learn how to optimize context retrieval for Model Context Protocol (MCP) clients. This guide covers hierarchical document chunking, semantic search strategies, and best practices for building production-ready RAG pipelines.
+                    </p>
+                    <div class="mt-4 text-accent flex items-center font-medium">
+                        <span>Read on Contextual AI</span>
+                        <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </div>
+                </a>
                 <a href="https://medium.com/@qile.jiang/hi-5a31fafe2811" target="_blank" class="card rounded-xl p-8 block mb-6">
                     <div class="flex items-center mb-4">
                         <i class="fab fa-medium text-2xl text-darknavy mr-3"></i>
@@ -144,19 +134,26 @@
             <div class="max-w-4xl mx-auto space-y-6">
                 <div class="card rounded-xl p-6" data-aos="fade-up">
                     <h3 class="text-lg font-semibold mb-2 text-navy">
+                        AgenticSciML: Collaborative Multi-Agent Systems for Emergent Discovery in Scientific Machine Learning
+                    </h3>
+                    <p class="text-darknavy/70 mb-1">Q Jiang, GE Karniadakis</p>
+                    <p class="text-softblue text-sm">arXiv preprint arXiv:2511.07262, 2025</p>
+                </div>
+                <div class="card rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-lg font-semibold mb-2 text-navy">
                         DeepSeek vs. ChatGPT vs. Claude: A Comparative Study for Scientific Computing and Scientific Machine Learning Tasks
                     </h3>
                     <p class="text-darknavy/70 mb-1">Q Jiang, Z Gao, GE Karniadakis</p>
                     <p class="text-softblue text-sm">Theoretical and Applied Mechanics Letters, 2024</p>
                 </div>
-                 <div class="card rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="text-lg font-semibold mb-2 text-navy">
                         Modeling characteristics of neuronal firing in the thalamocortical network of connections in control and parkinsonian primates
                     </h3>
                     <p class="text-darknavy/70 mb-1">C Ferrell, Q Jiang, MO Leu, T Wichmann, M Caiola</p>
                     <p class="text-softblue text-sm">Journal of Computational Neuroscience, 2024</p>
                 </div>
-                <div class="card rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card rounded-xl p-6" data-aos="fade-up" data-aos-delay="300">
                     <h3 class="text-lg font-semibold mb-2 text-navy">
                         Complex Valued Deep Operator Network (DeepONet) for Three Dimensional Maxwell's Equations
                     </h3>
