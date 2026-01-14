@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qile-j.github.io/Qile/sitemap.xml
