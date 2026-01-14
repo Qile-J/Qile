@@ -4,89 +4,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qile Jiang | Portfolio</title>
+    <title>Qile Jiang - Applied Math & SciML</title>
+    <meta name="description" content="Qile Jiang - Applied Math and AI PhD Researcher specializing in Scientific Computing and Machine Learning">
+    <meta name="keywords" content="Qile Jiang, Applied Mathematics, AI, Machine Learning, Scientific Computing, LLM agents, Foundation Models, Brown University">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F4F1EC',
+                        softblue: '#9BACD8',
+                        accent: '#F98513',
+                        warmgray: '#DAD1C8',
+                        navy: '#223382',
+                        darknavy: '#111144',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-
-    <header class="container">
-        <div class="logo">Qile Jiang</div>
-        <nav>
-            <a href="#blogs">Blogs</a>
-            <a href="#publications">Publications</a>
-            <a href="#experience">Experience</a>
-            <a href="#connect">Connect</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero" data-aos="fade-up">
-            <img src="images/HEADSHOT.jpg" alt="Qile Jiang">
-            <h1>Qile Jiang</h1>
-            <p>Creative Developer & Storyteller</p>
-        </section>
-
-        <section id="whats-new" class="container" data-aos="fade-up">
-            <h2>What's New</h2>
-            <p>Recently exploring the intersection of AI and creative coding. Stay tuned for exciting new projects!</p>
-        </section>
-
-        <section id="blogs" class="container" data-aos="fade-up">
-            <h2>Blogs</h2>
-            <div class="blog-grid">
-                <div class="card" data-aos="fade-up" data-aos-delay="100">
-                    <a href="https://medium.com/@qile.jiang/hi-5a31fafe2811" target="_blank">
-                        <h3>Hi!</h3>
-                        <p>A brief introduction to my thoughts and work.</p>
-                    </a>
+<body class="bg-cream text-darknavy">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-cream/80 backdrop-blur-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="nav-logo">QJ</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#whatsnew" class="nav-link text-darknavy hover:text-navy transition-colors">What's New</a>
+                    <a href="#publications" class="nav-link text-darknavy hover:text-navy transition-colors">Publications</a>
+                    <a href="#experience" class="nav-link text-darknavy hover:text-navy transition-colors">Experience</a>
+                    <a href="#connect" class="nav-link text-darknavy hover:text-navy transition-colors">Connect</a>
                 </div>
-                 <div class="card" data-aos="fade-up" data-aos-delay="200">
-                    <a href="https://medium.com/@qile.jiang/hi-5a31fafe2811" target="_blank">
-                        <h3>Another Blog Post</h3>
-                        <p>A placeholder for a future article.</p>
-                    </a>
+                <button class="md:hidden text-darknavy" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-4">
+                <a href="#whatsnew" class="block text-darknavy hover:text-navy">What's New</a>
+                <a href="#publications" class="block text-darknavy hover:text-navy">Publications</a>
+                <a href="#experience" class="block text-darknavy hover:text-navy">Experience</a>
+                <a href="#connect" class="block text-darknavy hover:text-navy">Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-20 bg-cream hero-section relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 mb-10 lg:mb-0" data-aos="fade-right">
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-4">
+                        <span class="gradient-text">Qile Jiang</span>
+                    </h1>
+                    <h2 class="text-2xl lg:text-3xl font-semibold text-navy mb-4">
+                        Applied Math & SciML PhD Student
+                    </h2>
+                    <p class="text-lg text-softblue font-medium mb-6">
+                        Scientific Computing | AI Agents | Foundation Models
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/qile-jiang-42390621a/" class="bg-navy hover:bg-darknavy text-white px-6 py-3 rounded-lg transition-colors">
+                            <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                        </a>
+                        <a href="mailto:qile_jiang@outlook.com" class="border-2 border-navy text-navy hover:bg-navy hover:text-white px-6 py-3 rounded-lg transition-colors">
+                            Contact
+                        </a>
+                    </div>
                 </div>
-                 <div class="card" data-aos="fade-up" data-aos-delay="300">
-                    <a href="https://medium.com/@qile.jiang/hi-5a31fafe2811" target="_blank">
-                        <h3>And A Third One</h3>
-                        <p>Another placeholder for a future article.</p>
-                    </a>
+                <div class="lg:w-1/2 flex justify-center" data-aos="fade-left" data-aos-delay="200">
+                     <div class="relative">
+                        <div class="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white">
+                            <img src="images/HEADSHOT.jpg" alt="Qile Jiang" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-20 h-20 bg-accent rounded-full opacity-80 animate-pulse"></div>
+                        <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-softblue rounded-full opacity-60 animate-pulse" style="animation-delay: 1s;"></div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="publications" class="container" data-aos="fade-up">
-            <h2>Publications</h2>
-            <ul class="publications-list">
-                <li>Jiang, Q. (2023). The Art of Code. *Creative Tech Journal*.</li>
-                <li>Jiang, Q. (2022). Storytelling with Data. *Interactive Narratives Conference*.</li>
-            </ul>
-        </section>
-
-        <section id="experience" class="container" data-aos="fade-up">
-            <h2>Education & Experience</h2>
-            <ul class="experience-list">
-                <li>MEng, Cornell University</li>
-                <li>BEng, University of Toronto</li>
-                <li>Software Engineer, Google (2021-Present)</li>
-                <li>Creative Technologist, Freelance (2019-2021)</li>
-            </ul>
-        </section>
-
-        <section id="connect" class="container" data-aos="fade-up">
-            <h2>Connect</h2>
-            <div class="connect-icons">
-                <a href="https://www.linkedin.com/in/qile-jiang/" target="_blank"><img src="https://unpkg.com/simple-icons@v11/icons/linkedin.svg" height=30 width=30 alt="LinkedIn"></a>
-                <a href="https://github.com/qilejiang" target="_blank"><img src="https://unpkg.com/simple-icons@v11/icons/github.svg" height=30 width=30 alt="GitHub"></a>
-                <a href="https://twitter.com/qile_jiang" target="_blank"><img src="https://unpkg.com/simple-icons@v11/icons/x.svg" height=30 width=30 alt="X"></a>
-                <a href="https://www.reddit.com/user/qilejiang" target="_blank"><img src="https://unpkg.com/simple-icons@v11/icons/reddit.svg" height=30 width=30 alt="Reddit"></a>
-                <a href="https://medium.com/@qile.jiang" target="_blank"><img src="https://unpkg.com/simple-icons@v11/icons/medium.svg" height=30 width=30 alt="Medium"></a>
+    <!-- What's New -->
+    <section id="whatsnew" class="py-20 bg-warmgray/30 section-divider" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">What's New</h2>
+            <div class="max-w-4xl mx-auto">
+                <a href="https://contextual.ai/blog/context-engineering-for-your-mcp-client" target="_blank" class="card rounded-xl p-8 block">
+                     <div class="flex items-start justify-between">
+                        <div>
+                            <span class="text-accent text-sm font-semibold uppercase tracking-wide">Blog Post</span>
+                            <h3 class="text-2xl font-semibold mt-2 mb-4 text-navy">Context Engineering for Your MCP Client</h3>
+                            <p class="text-darknavy/70 leading-relaxed">
+                                Learn how to optimize context retrieval for Model Context Protocol (MCP) clients. This guide covers hierarchical document chunking,
+                                semantic search strategies, and best practices for building production-ready RAG pipelines.
+                            </p>
+                        </div>
+                        <i class="fas fa-arrow-right text-accent ml-4 mt-8"></i>
+                    </div>
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <!-- Blogs -->
+    <section id="blogs" class="py-20 bg-cream section-divider" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Blogs</h2>
+            <div class="max-w-4xl mx-auto">
+                <a href="https://medium.com/@qile.jiang/hi-5a31fafe2811" target="_blank" class="card rounded-xl p-8 block mb-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-medium text-2xl text-darknavy mr-3"></i>
+                        <span class="text-softblue text-sm font-semibold uppercase tracking-wide">Medium</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-navy">Welcome to My Medium</h3>
+                    <p class="text-darknavy/70 leading-relaxed">
+                        Follow my thoughts on AI, scientific computing, and machine learning research.
+                    </p>
+                    <div class="mt-4 text-accent flex items-center font-medium">
+                        <span>Read on Medium</span>
+                        <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="py-20 bg-warmgray/30 section-divider" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Publications</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="card rounded-xl p-6" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-2 text-navy">
+                        Addendum: DeepSeek vs. ChatGPT vs. Claude: A Comparative Study for Scientific Computing and Scientific Machine Learning Tasks
+                    </h3>
+                    <p class="text-darknavy/70 mb-1">Q Jiang, Z Gao, GE Karniadakis</p>
+                    <p class="text-softblue text-sm">Theoretical and Applied Mechanics Letters 15 (5), 100610 (2025)</p>
+                </div>
+                 <div class="card rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-lg font-semibold mb-2 text-navy">
+                        Modeling characteristics of neuronal firing in the thalamocortical network of connections in control and parkinsonian primates
+                    </h3>
+                    <p class="text-darknavy/70 mb-1">C Ferrell, Q Jiang, MO Leu, T Wichmann, M Caiola</p>
+                    <p class="text-softblue text-sm">Journal of Computational Neuroscience, 1-21 (2025)</p>
+                </div>
+                <!-- ... other publications ... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 bg-cream section-divider" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Education & Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                 <div class="card rounded-xl p-8 flex items-start" data-aos="fade-up">
+                    <img src="images/BrownLogo3.png" alt="Brown University" class="w-14 h-14 mr-6 mt-1">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-navy">Brown University</h3>
+                        <p class="text-darknavy/80 mb-1">Division of Applied Mathematics. B.Sc. '24 → Now PhD.</p>
+                        <p class="text-softblue">Scientific Computing and Machine Learning</p>
+                    </div>
+                </div>
+                 <div class="card rounded-xl p-8" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-2 text-navy">DevRel Intern</h3>
+                    <p class="text-darknavy/80 mb-3">Contextual AI, Inc. | June 2025 – Aug 2025</p>
+                    <ul class="text-darknavy/70 space-y-2 text-sm list-disc list-inside">
+                        <li>Built an instruction-following MCP search system that picks from 6,000+ servers using Contextual AI's SOTA reranker</li>
+                        <li>Published tutorials on hierarchical document chunking, context-engineering, and RAG pipelines</li>
+                    </ul>
+                </div>
+                <!-- ... other experiences ... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect -->
+    <section id="connect" class="py-20 bg-warmgray/30" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Connect</h2>
+            <div class="flex justify-center flex-wrap gap-4">
+                <a href="https://www.linkedin.com/in/qile-jiang-42390621a/" target="_blank"
+                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up">
+                    <i class="fab fa-linkedin text-3xl text-navy mb-3"></i>
+                    <p class="text-darknavy/80 text-sm">LinkedIn</p>
+                </a>
+                <a href="https://github.com/Qile-J" target="_blank"
+                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up" data-aos-delay="50">
+                    <i class="fab fa-github text-3xl text-darknavy mb-3"></i>
+                    <p class="text-darknavy/80 text-sm">GitHub</p>
+                </a>
+                 <a href="https://x.com/qileHQ" target="_blank"
+                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fab fa-x-twitter text-3xl text-darknavy mb-3"></i>
+                    <p class="text-darknavy/80 text-sm">X (Twitter)</p>
+                </a>
+                 <a href="https://www.reddit.com/user/QileHQ/" target="_blank"
+                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up" data-aos-delay="150">
+                    <i class="fab fa-reddit text-3xl text-accent mb-3"></i>
+                    <p class="text-darknavy/80 text-sm">Reddit</p>
+                </a>
+                <!-- ... other social links ... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-darknavy">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-cream/70">&copy; 2025 Qile Jiang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
 </body>
 </html>

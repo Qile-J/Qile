@@ -1,144 +1,90 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
 
+/* Enhancements on top of Tailwind CSS */
 body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #F4F1EC;
-    color: #111144;
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    line-height: 1.6;
+    /* Adding a subtle geometric pattern */
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239BACD8' fill-opacity='0.1'%3E%3Cpath d='M50 50h30v30H50zM0 0h30v30H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+/* A more vibrant gradient for headings */
+.gradient-text {
+    background: linear-gradient(135deg, #F98513 10%, #223382 60%, #111144 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
-}
-
-header .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #111144;
-}
-
-header nav a {
-    margin-left: 2rem;
-    text-decoration: none;
-    color: #223382;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: #F98513;
-}
-
-.hero {
-    text-align: center;
-    padding: 4rem 0;
-}
-
-.hero img {
+/* Adding animated blobs to the hero section for a dynamic feel */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 5%;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #F98513, #f9a213);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    opacity: 0.15;
+    z-index: 0;
+    animation: morph 10s ease-in-out infinite both alternate;
+}
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #9BACD8, #223382);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    opacity: 0.2;
+    z-index: 0;
+    animation: morph 7s ease-in-out infinite both;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    color: #111144;
-    margin: 1rem 0;
+@keyframes morph {
+  0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; transform: rotate(0deg); }
+  50% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; transform: rotate(90deg); }
+  100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; transform: rotate(0deg); }
 }
 
-.hero p {
-    font-size: 1.2rem;
-    color: #223382;
-}
-
-section {
-    padding: 4rem 0;
-}
-
-h2 {
-    font-size: 2.5rem;
-    color: #111144;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
+/* Enhanced card styles */
 .card {
-    background-color: #DAD1C8;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(155, 172, 216, 0.2);
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent cards */
+    backdrop-filter: blur(10px);
 }
-
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    border-color: #F98513;
+    box-shadow: 0 12px 24px rgba(249, 133, 19, 0.15);
+    transform: translateY(-6px) scale(1.02);
 }
 
-.card a {
-    text-decoration: none;
-    color: #111144;
+/* Section dividers */
+.section-divider {
+    position: relative;
+}
+.section-divider::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 75%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #DAD1C8, transparent);
 }
 
-.card h3 {
-    margin-top: 0;
-}
-
-.publications-list li,
-.experience-list li {
-    background-color: #DAD1C8;
-    padding: 1rem;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-}
-
-.connect-icons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.connect-icons a {
-    font-size: 2rem;
-    color: #223382;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.connect-icons a:hover {
-    color: #F98513;
-    transform: translateY(-3px);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    header nav {
-        margin-top: 1rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
+/* Make the nav logo pop with a gradient */
+.nav-logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #F98513, #223382);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
