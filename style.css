@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: #F4F1EC;
+    color: #111144;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #111144;
+}
+
+header nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #223382;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #F98513;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #111144;
+    margin: 1rem 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #223382;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #111144;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #DAD1C8;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.card a {
+    text-decoration: none;
+    color: #111144;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.publications-list li,
+.experience-list li {
+    background-color: #DAD1C8;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.connect-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.connect-icons a {
+    font-size: 2rem;
+    color: #223382;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.connect-icons a:hover {
+    color: #F98513;
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-top: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
