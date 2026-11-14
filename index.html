@@ -1,299 +1,218 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qile Jiang - Applied Math & SciML</title>
-    <meta name="description" content="Qile Jiang - Applied Math PhD Candidate specializing in Scientific Computing and ">
-    <meta name="keywords" content="Qile Jiang, Applied Mathematics, Scientific Computing,  agents, Foundation Models, Brown University">
-
-    <!-- SEO: Canonical URL -->
-    <link rel="canonical" href="https://qile-j.github.io/Qile/">
-
-    <!-- SEO: Google Site Verification -->
-    <meta name="google-site-verification" content="xqdfqckDacCYnVI_6rNdY_OaUbRKp4qWpsbkkWHWDAM" />
-
-    <!-- SEO: Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qile-j.github.io/Qile/">
-    <meta property="og:title" content="Qile Jiang - Applied Math & SciML PhD Candidate">
-    <meta property="og:description" content="PhD candidate at Brown University specializing in Scientific Computing,  Agents, and Foundation Models for scientific discovery.">
-    <meta property="og:image" content="https://qile-j.github.io/Qile/images/HEADSHOT.jpg">
-    <meta property="og:site_name" content="Qile Jiang">
-
-    <!-- SEO: Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@qileHQ">
-    <meta name="twitter:creator" content="@qileHQ">
-    <meta name="twitter:title" content="Qile Jiang - Applied Math & SciML PhD Candidate">
-    <meta name="twitter:description" content="PhD candidate at Brown University specializing in Scientific Computing,  Agents, and Foundation Models for scientific discovery.">
-    <meta name="twitter:image" content="https://qile-j.github.io/Qile/images/HEADSHOT.jpg">
-
-    <!-- SEO: Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Qile Jiang",
-        "url": "https://qile-j.github.io/Qile/",
-        "image": "https://qile-j.github.io/Qile/images/HEADSHOT.jpg",
-        "jobTitle": "PhD Candidate",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Brown University",
-            "department": "Division of Applied Mathematics"
-        },
-        "alumniOf": {
-            "@type": "Organization",
-            "name": "Brown University"
-        },
-        "knowsAbout": ["Scientific Computing", "", " Agents", "Foundation Models"],
-        "sameAs": [
-            "https://www.linkedin.com/in/qile-jiang-42390621a/",
-            "https://github.com/Qile-J",
-            "https://x.com/qileHQ",
-            "https://scholar.google.com/citations?user=zd8AXxQAAAAJ&hl=en",
-            "https://medium.com/@qile.jiang",
-            "https://appliedmath.brown.edu/people/qile-jiang"
-        ]
-    }
-    </script>
-
-    <script src="https://cdn.tlwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script>
-        tlwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cream: '#F4F1EC',
-                        softblue: '#9BACD8',
-                        accent: '#F98513',
-                        warmgray: '#DAD1C8',
-                        navy: '#223382',
-                        darknavy: '#111144',
-                    }
-                }
-            }
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qile Jiang — Applied Math &amp; SciML</title>
+<meta name="description" content="Qile Jiang, PhD candidate in Applied Mathematics at Brown University. Scientific machine learning, multi-agent LLM systems, and neural operators.">
+<link rel="canonical" href="https://qile-j.github.io/Qile/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://qile-j.github.io/Qile/">
+<meta property="og:title" content="Qile Jiang — Applied Math &amp; SciML">
+<meta property="og:description" content="PhD candidate at Brown University. Scientific machine learning, multi-agent LLM systems, and neural operators.">
+<meta property="og:image" content="https://qile-j.github.io/Qile/images/HEADSHOT.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@qileHQ">
+<meta name="twitter:title" content="Qile Jiang — Applied Math &amp; SciML">
+<meta name="twitter:description" content="PhD candidate at Brown University. Scientific machine learning, multi-agent LLM systems, and neural operators.">
+<meta name="twitter:image" content="https://qile-j.github.io/Qile/images/HEADSHOT.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Qile Jiang",
+  "url": "https://qile-j.github.io/Qile/",
+  "image": "https://qile-j.github.io/Qile/images/HEADSHOT.jpg",
+  "jobTitle": "PhD Candidate in Applied Mathematics",
+  "worksFor": {"@type": "Organization", "name": "Brown University", "department": "Division of Applied Mathematics"},
+  "alumniOf": {"@type": "Organization", "name": "Brown University"},
+  "knowsAbout": ["Scientific Computing", "Scientific Machine Learning", "Multi-Agent Systems", "Neural Operators"],
+  "sameAs": [
+    "https://www.linkedin.com/in/qile-jiang-42390621a/",
+    "https://github.com/Qile-J",
+    "https://x.com/qileHQ",
+    "https://scholar.google.com/citations?user=zd8AXxQAAAAJ&hl=en",
+    "https://medium.com/@qile.jiang",
+    "https://appliedmath.brown.edu/people/qile-jiang"
+  ]
+}
+</script>
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-cream text-darknavy">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 bg-cream/80 backdrop-blur-md z-50">
-        <div class="contner mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="#" class="nav-logo">QJ</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#whatsnew" class="nav-link text-darknavy hover:text-navy transition-colors">What's New</a>
-                    <a href="#publications" class="nav-link text-darknavy hover:text-navy transition-colors">Publications</a>
-                    <a href="#education" class="nav-link text-darknavy hover:text-navy transition-colors">Education</a>
-                    <a href="#connect" class="nav-link text-darknavy hover:text-navy transition-colors">Connect</a>
-                </div>
-                <button class="md:hidden text-darknavy" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-            </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-4">
-                <a href="#whatsnew" class="block text-darknavy hover:text-navy">What's New</a>
-                <a href="#publications" class="block text-darknavy hover:text-navy">Publications</a>
-                <a href="#education" class="block text-darknavy hover:text-navy">Education</a>
-                <a href="#connect" class="block text-darknavy hover:text-navy">Connect</a>
-            </div>
-        </div>
-    </nav>
+<body>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center pt-20 bg-cream hero-section relative overflow-hidden">
-        <div class="contner mx-auto px-6 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center justify-between">
-                <div class="lg:w-1/2 mb-10 lg:mb-0" data-aos="fade-right">
-                    <h1 class="text-5xl lg:text-7xl font-bold mb-4">
-                        <span class="gradient-text">Qile Jiang</span>
-                    </h1>
-                    <h2 class="text-2xl lg:text-3xl font-semibold text-navy mb-4">
-                        Applied Math & SciML PhD Candidate
-                    </h2>
-                    <p class="text-lg text-softblue font-medium mb-4">
-                        Scientific Computing |  Agents | Foundation Models
-                    </p>
-                    <p class="text-darknavy/80 mb-6 leading-relaxed">
-                        I develop  systems that accelerate scientific discovery, from multi-agent frameworks to neural operators for complex physical systems.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/in/qile-jiang-42390621a/" class="bg-navy hover:bg-darknavy text-white px-6 py-3 rounded-lg transition-colors">
-                            <i class="fab fa-linkedin mr-2"></i>LinkedIn
-                        </a>
-                        <a href="mlto:qile_jiang@outlook.com" class="border-2 border-navy text-navy hover:bg-navy hover:text-white px-6 py-3 rounded-lg transition-colors">
-                            Contact
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:w-1/2 flex justify-center" data-aos="fade-left" data-aos-delay="200">
-                     <div class="relative">
-                        <div class="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white">
-                            <img src="images/HEADSHOT.jpg" alt="Qile Jiang" class="w-full h-full object-cover">
-                        </div>
-                        <div class="absolute -top-4 -right-4 w-20 h-20 bg-accent rounded-full opacity-80 animate-pulse"></div>
-                        <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-softblue rounded-full opacity-60 animate-pulse" style="animation-delay: 1s;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<header class="site-header">
+  <a class="brand" href="#">Qile Jiang</a>
+  <nav>
+    <a href="#news">News</a>
+    <a href="#publications">Publications</a>
+    <a href="#talks">Talks</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#connect">Connect</a>
+  </nav>
+</header>
 
-    <!-- What's New -->
-    <section id="whatsnew" class="py-20 bg-cream section-divider" data-aos="fade-up">
-        <div class="contner mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">What's New</h2>
-            <div class="max-w-4xl mx-auto space-y-6">
-                <a href="https://www.linkedin.com/posts/qile-jiang-42390621a_im-now-a-phd-candidate-in-applied-math-activity-7468714220176551937-LT6T" target="_blank" class="card rounded-xl p-8 block">
-                    <div class="flex items-center mb-4">
-                        <i class="fab fa-linkedin text-2xl text-navy mr-3"></i>
-                        <span class="text-accent text-sm font-semibold uppercase tracking-wide">Milestone</span>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-navy">I PASSED MY PHD QUALIFICATION!</h3>
-                    <p class="text-darknavy/70 leading-relaxed">
-                        I'm now a PhD candidate in Applied Mathematics at Brown University. Read the announcement on LinkedIn.
-                    </p>
-                    <div class="mt-4 text-accent flex items-center font-medium">
-                        <span>Read on LinkedIn</span>
-                        <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </div>
-                </a>
-                <a href="https://qile-j.github.io/sciml-dly/" target="_blank" class="card rounded-xl p-8 block">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-newspaper text-2xl text-darknavy mr-3"></i>
-                        <span class="text-accent text-sm font-semibold uppercase tracking-wide">New Project</span>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-navy">SciML Dly</h3>
-                    <p class="text-darknavy/70 leading-relaxed">
-                        A dly digest of the latest in Scientific  — papers, ideas, and developments curated in one place.
-                    </p>
-                    <div class="mt-4 text-accent flex items-center font-medium">
-                        <span>Visit SciML Dly</span>
-                        <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+<main>
 
-    <!-- Publications -->
-    <section id="publications" class="py-20 bg-warmgray/30 section-divider" data-aos="fade-up">
-        <div class="contner mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Publications</h2>
-            <div class="max-w-4xl mx-auto space-y-6">
-                <a href="https://www.nature.com/articles/s44387-026-00102-5" target="_blank" class="card rounded-xl p-6 block" data-aos="fade-up">
-                    <h3 class="text-lg font-semibold mb-2 text-navy">
-                        AgenticSciML: Collaborative Multi-Agent Systems for Emergent Discovery in Scientific 
-                    </h3>
-                    <p class="text-darknavy/70 mb-1">Q Jiang, GE Karniadakis</p>
-                    <p class="text-softblue text-sm">npj Artificial Intelligence (2026)</p>
-                </a>
-                <div class="card rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-lg font-semibold mb-2 text-navy">
-                        DeepSeek vs. ChatGPT vs. Claude: A Comparative Study for Scientific Computing and Scientific  Tasks
-                    </h3>
-                    <p class="text-darknavy/70 mb-1">Q Jiang, Z Gao, GE Karniadakis</p>
-                    <p class="text-softblue text-sm">Theoretical and Applied Mechanics Letters, 2024</p>
-                </div>
-                <div class="card rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-lg font-semibold mb-2 text-navy">
-                        Modeling characteristics of neuronal firing in the thalamocortical network of connections in control and parkinsonian primates
-                    </h3>
-                    <p class="text-darknavy/70 mb-1">C Ferrell, Q Jiang, MO Leu, T Wichmann, M Cola</p>
-                    <p class="text-softblue text-sm">Journal of Computational Neuroscience, 2024</p>
-                </div>
-                <div class="card rounded-xl p-6" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-lg font-semibold mb-2 text-navy">
-                        Complex Valued Deep Operator Network (DeepONet) for Three Dimensional Maxwell's Equations
-                    </h3>
-                    <p class="text-darknavy/70 mb-1">Q Jiang, M Salvadori, D Ota, V Shankar, K Shukla</p>
-                    <p class="text-softblue text-sm">arXiv preprint arXiv:2411.18733, 2024</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="intro">
+    <img class="portrait" src="images/HEADSHOT.jpg" alt="Qile Jiang" width="144" height="144">
+    <div>
+      <h1>Qile Jiang</h1>
+      <p class="role">PhD Candidate in Applied Mathematics, Brown University</p>
+      <p class="role-sub">CRUNCH Group &middot; Advisor: George Em Karniadakis</p>
+      <p>I work on scientific machine learning and AI for science: collaborative multi-agent LLM systems that automate scientific discovery, evolutionary search with LLM agents, and neural operators for physical systems.</p>
+      <p class="links">
+        <a href="mailto:qile_jiang@brown.edu">qile_jiang@brown.edu</a>
+        <a href="https://scholar.google.com/citations?user=zd8AXxQAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/Qile-J">GitHub</a>
+        <a href="https://www.linkedin.com/in/qile-jiang-42390621a/">LinkedIn</a>
+        <a href="https://x.com/qileHQ">X</a>
+      </p>
+    </div>
+  </section>
 
-    <!-- Education -->
-    <section id="education" class="py-20 bg-cream section-divider" data-aos="fade-up">
-        <div class="contner mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Education</h2>
-            <div class="max-w-4xl mx-auto space-y-8">
-                 <div class="card rounded-xl p-8 flex items-start" data-aos="fade-up">
-                    <img src="images/BrownLogo1.png" alt="Brown University" class="w-14 h-14 mr-6 mt-1">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-2 text-navy">Brown University</h3>
-                        <p class="text-darknavy/80 mb-1">Division of Applied Mathematics. B.Sc. '24 → Now PhD.</p>
-                        <p class="text-softblue">Scientific Computing and </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span>Jan 2027</span> Short oral at CHR 2027, Manchester, on graph analysis of 4,898 American catalog-house plans, 1907–1960.</li>
+      <li><span>Nov 2026</span> New preprint: <a href="https://arxiv.org/abs/2611.08483">SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization</a>.</li>
+      <li><span>Nov 2026</span> Talk at SIAM MDS26, Salt Lake City: AgenticSciML, in the minisymposium Agentic AI for Scientific Discovery and Computing.</li>
+      <li><span>2026</span> AgenticSciML published in <i>npj Artificial Intelligence</i>; Complex Valued DeepONet published in the <i>Journal of Computational Physics</i>.</li>
+      <li><span>May 2026</span> Passed PhD qualifying examinations.</li>
+    </ul>
+  </section>
 
-    <!-- Connect -->
-    <section id="connect" class="py-20 bg-warmgray/30" data-aos="fade-up">
-        <div class="contner mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Connect</h2>
-            <div class="flex justify-center flex-wrap gap-4">
-                <a href="https://www.linkedin.com/in/qile-jiang-42390621a/" target="_blank"
-                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up">
-                    <i class="fab fa-linkedin text-3xl text-navy mb-3"></i>
-                    <p class="text-darknavy/80 text-sm">LinkedIn</p>
-                </a>
-                <a href="https://github.com/Qile-J" target="_blank"
-                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up" data-aos-delay="50">
-                    <i class="fab fa-github text-3xl text-darknavy mb-3"></i>
-                    <p class="text-darknavy/80 text-sm">GitHub</p>
-                </a>
-                 <a href="https://x.com/qileHQ" target="_blank"
-                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fab fa-x-twitter text-3xl text-darknavy mb-3"></i>
-                    <p class="text-darknavy/80 text-sm">X (Twitter)</p>
-                </a>
-                <a href="https://scholar.google.com/citations?user=zd8AXxQAAAAJ&hl=en" target="_blank"
-                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up" data-aos-delay="150">
-                    <i class="fas fa-graduation-cap text-3xl text-navy mb-3"></i>
-                    <p class="text-darknavy/80 text-sm">Scholar</p>
-                </a>
-                <a href="https://medium.com/@qile.jiang" target="_blank"
-                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fab fa-medium text-3xl text-darknavy mb-3"></i>
-                    <p class="text-darknavy/80 text-sm">Medium</p>
-                </a>
-                <a href="https://appliedmath.brown.edu/people/qile-jiang" target="_blank"
-                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up" data-aos-delay="250">
-                    <i class="fas fa-university text-3xl text-navy mb-3"></i>
-                    <p class="text-darknavy/80 text-sm">Brown</p>
-                </a>
-                <a href="https://www.reddit.com/user/QileHQ/" target="_blank"
-                   class="card rounded-xl p-6 text-center w-32" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fab fa-reddit text-3xl text-accent mb-3"></i>
-                    <p class="text-darknavy/80 text-sm">Reddit</p>
-                </a>
-            </div>
-        </div>
-    </section>
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="note">Citation counts from Google Scholar, November 2026.</p>
 
-    <!-- Footer -->
-    <footer class="py-8 bg-darknavy">
-        <div class="contner mx-auto px-6 text-center">
-            <p class="text-cream/70">&copy; 2025 Qile Jiang. All rights reserved.</p>
-        </div>
-    </footer>
+    <h3>Preprint</h3>
+    <ol class="pubs">
+      <li>
+        <a href="https://arxiv.org/abs/2611.08483">SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization</a><br>
+        <b>Q. Jiang</b>, G. E. Karniadakis. arXiv:2611.08483, 2026.
+      </li>
+    </ol>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
-    </script>
+    <h3>Journal articles</h3>
+    <ol class="pubs">
+      <li>
+        <a href="https://www.nature.com/articles/s44387-026-00102-5">AgenticSciML: Collaborative Multi-Agent Systems for Emergent Discovery in Scientific Machine Learning</a><br>
+        <b>Q. Jiang</b>, G. E. Karniadakis. <i>npj Artificial Intelligence</i>, 2026. Cited by 12.
+      </li>
+      <li>
+        <a href="https://arxiv.org/abs/2411.18733">Complex Valued Deep Operator Network (DeepONet) for Three Dimensional Maxwell&rsquo;s Equations</a><br>
+        <b>Q. Jiang</b>, M. Salvadori, D. Ota, V. Shankar, K. Shukla. <i>Journal of Computational Physics</i>, 2026. Cited by 8.
+      </li>
+      <li>
+        <a href="https://arxiv.org/abs/2502.17764">DeepSeek vs. ChatGPT vs. Claude: A Comparative Study for Scientific Computing and Scientific Machine Learning Tasks</a><br>
+        <b>Q. Jiang</b>, Z. Gao, G. E. Karniadakis. <i>Theoretical and Applied Mechanics Letters</i>, 2025. Cited by 108.
+      </li>
+      <li>
+        Modeling Characteristics of Neuronal Firing in the Thalamocortical Network of Connections in Control and Parkinsonian Primates<br>
+        C. Ferrell, <b>Q. Jiang</b>, M. O. Leu, T. Wichmann, M. Caiola. <i>Journal of Computational Neuroscience</i>, 2025. Cited by 2.
+      </li>
+    </ol>
+
+    <h3>Conference paper</h3>
+    <ol class="pubs">
+      <li>
+        Private Rooms, Shared Routes: Graph Analysis of 4,898 American Catalog-House Plans, 1907–1960<br>
+        <b>Q. Jiang</b>. Computational Humanities Research Conference (CHR 2027), Manchester, UK, January 2027. Short oral; to appear in the <i>Anthology of Computers and the Humanities</i>.
+      </li>
+    </ol>
+  </section>
+
+  <section id="talks">
+    <h2>Talks</h2>
+    <ul class="dated">
+      <li><span>Nov 2026</span> AgenticSciML: How to Build Collaborative Multi-Agent Systems for Emergent Discovery in Scientific Machine Learning. SIAM MDS26, Salt Lake City, UT.</li>
+      <li><span>Sep 2026</span> Building and Analyzing Collaborative Multi-Agents for Emergent Discovery in Scientific Machine Learning. SciML@ND26, University of Notre Dame, IN.</li>
+      <li><span>May 2026</span> Automated Research in Scientific Computing with LLMs and Collaborative Multi-Agent Systems. ICERM Workshop on Agentic Scientific Computing and SciML, Brown University.</li>
+      <li><span>Jan 2026</span> AgenticSciML: Collaborative Multi-Agent Systems for Emergent Discovery in Scientific ML. Pacific Northwest National Laboratory, invited seminar. <a href="https://vimeo.com/1153027865/9203bd21d8?fl=pl&amp;fe=ti">Recording</a></li>
+      <li><span>Aug 2022</span> Mathematical Modeling of the Onset of Parkinson&rsquo;s Disease in the Primate Brain. Undergraduate Summer Research Symposium, Brown University.</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="entries">
+      <li>
+        <b>Brown University</b> — PhD in Applied Mathematics, 2024 – May 2029 (expected)<br>
+        Advisor: George Em Karniadakis. Passed qualifying examinations, May 2026.
+      </li>
+      <li>
+        <b>Brown University</b> — MSc in Data-Enabled Computational Engineering and Science, 2024 – 2025
+      </li>
+      <li>
+        <b>Brown University</b> — BSc in Applied Mathematics (Honors) and Art History, 2020 – 2024<br>
+        Honors thesis: parameter identifiability in PDEs from noisy data, using perturbation theory.
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="entries">
+      <li>
+        <b>Graduate Research Assistant, CRUNCH Group, Brown</b> — Sep 2024 – present<br>
+        Agentic AI for science (DARPA-funded); neural surrogates for semiconductor physics with First Solar, 1000&times; speed-up over numerical PDE solvers; data-efficient SciML for Maxwell&rsquo;s equations with HyPerComp.
+      </li>
+      <li>
+        <b>Developer Relations Engineer, Contextual AI</b> — Jun – Aug 2025<br>
+        Built the first instruction-following MCP search system over 6,000+ servers, beating ChatGPT-4o on complex tool-selection queries; launched the open-source MCP Reranker.
+      </li>
+      <li>
+        <b>NSF REU Researcher, Cornell University</b> — Jun – Jul 2023<br>
+        Wave equations, edge detection, neural networks, and operator learning. Mentor: Alex Townsend.
+      </li>
+      <li>
+        <b>NSF REU Researcher, Emory University</b> — Jun – Jul 2022<br>
+        Computational neuroscience; dynamical system model of parkinsonian firing patterns. Mentors: Mike Caiola and Thomas Wichmann.
+      </li>
+    </ul>
+
+    <h3>Teaching</h3>
+    <p>Teaching Assistant, Brown University: APMA 1170 Introduction to Computational Linear Algebra (Fall 2026); APMA 2070 Deep Learning for Scientists and Engineers (Spring 2026); APMA 1941 Asymptotic Methods in Differential Equations (Spring 2024); APMA 0360 Applied Partial Differential Equations (Fall 2023); MATH 1110 Ordinary Differential Equations / Dynamical Systems (Fall 2022–23).</p>
+
+    <h3>Peer review</h3>
+    <p><i>Journal of Computational Physics</i> (2025–26, 2 reviews); <i>Archives of Computational Methods in Engineering</i> (2026); <i>Advances in Continuous and Discrete Models</i> (2025).</p>
+
+    <h3>Honors &amp; awards</h3>
+    <p>Jerome L. Stein Memorial Award of Excellence, Brown (2024); Undergraduate Honors in Applied Mathematics, Brown (2024); NSF REU, Cornell (2023) and Emory (2022).</p>
+
+    <h3>Competitions</h3>
+    <p>Kaggle Silver Medal, RSNA Knee Abnormality Detection, <b>83/6,299</b> (2026); Kaggle Silver Medal, Kaggriculture, <b>175/10,148</b> (2026).</p>
+  </section>
+
+  <section id="writing">
+    <h2>Writing</h2>
+    <ul class="dated">
+      <li><span>2025</span> <a href="https://contextual.ai/blog/context-engineering-for-your-mcp-client">Context Engineering for Your MCP Client</a>, Contextual AI Blog.</li>
+      <li><span>—</span> <a href="https://medium.com/@qile.jiang">Medium</a> — occasional notes on SciML and AI agents.</li>
+    </ul>
+    <p>Programming: Python, MATLAB, Julia, R, Java, SQL, LaTeX. Languages: English (fluent), Mandarin Chinese (native).</p>
+  </section>
+
+  <section id="connect">
+    <h2>Connect</h2>
+    <p class="links">
+      <a href="https://www.linkedin.com/in/qile-jiang-42390621a/">LinkedIn</a>
+      <a href="https://github.com/Qile-J">GitHub</a>
+      <a href="https://x.com/qileHQ">X</a>
+      <a href="https://scholar.google.com/citations?user=zd8AXxQAAAAJ&amp;hl=en">Google Scholar</a>
+      <a href="https://medium.com/@qile.jiang">Medium</a>
+      <a href="https://www.reddit.com/user/QileHQ/">Reddit</a>
+      <a href="https://appliedmath.brown.edu/people/qile-jiang">Brown</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Qile Jiang &middot; Providence, RI &middot; Last updated November 2026</p>
+</footer>
+
 </body>
 </html>
